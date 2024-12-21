@@ -11,8 +11,6 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "lua_ls",
-          "rust_analyzer",
-          "eslint"
         }
       })
     end
@@ -22,8 +20,6 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
-      lspconfig.rust_analyzer.setup({})
-      lspconfig.eslint.setup({})
 
       vim.keymap.set('n', '<leader>hd', vim.lsp.buf.hover, {})
       vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, {})
