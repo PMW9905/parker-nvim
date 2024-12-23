@@ -15,6 +15,9 @@ vim.opt.fileformats = "dos,unix"
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- Custom keybinds 
+vim.keymap.set('n', '<leader>x', ':q<CR>')
+
 -- autocommand for relative line numbers in normal
 -- and line numbers in insert mode
 vim.cmd([[
