@@ -2,7 +2,8 @@ return {
 	{
 		"williamboman/mason.nvim",
 		config = function()
-			require("mason").setup({})
+			require("mason").setup({
+			})
 		end,
 	},
 	{
@@ -11,6 +12,7 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"lua_ls",
+					"eslint",
 				},
 			})
 		end,
@@ -21,6 +23,11 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 			local lspconfig = require("lspconfig")
+
+			lspconfig.eslint.setup({
+				capabilities = capabilities,
+			})
+
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 				on_init = function(client)
