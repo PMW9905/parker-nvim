@@ -12,7 +12,11 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"lua_ls",
-					"eslint",
+          "ts_ls",
+          "eslint",
+          "html",
+          "cssls",
+          "cssmodules_ls",
 				},
 			})
 		end,
@@ -24,9 +28,25 @@ return {
 
 			local lspconfig = require("lspconfig")
 
+			lspconfig.ts_ls.setup({
+				capabilities = capabilities,
+			})
+
 			lspconfig.eslint.setup({
 				capabilities = capabilities,
 			})
+
+      lspconfig.html.setup({
+        capabilities = capabilities,
+      })
+
+      lspconfig.cssls.setup({
+        capabilities = capabilities,
+      })
+
+      lspconfig.cssmodules_ls.setup({
+        capabilities = capabilities,
+      })
 
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
