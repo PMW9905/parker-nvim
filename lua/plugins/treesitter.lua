@@ -17,6 +17,7 @@ return {
 				"javascript",
 				"html",
 				"rust",
+        "python",
 			},
 			sync_install = false,
 			highlight = { enable = true },
