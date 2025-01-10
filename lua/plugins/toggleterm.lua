@@ -1,11 +1,12 @@
 return {
   {
-    'akinsho/toggleterm.nvim',
+    "akinsho/toggleterm.nvim",
     config = function()
       require("toggleterm").setup({
         version = "*",
-        open_mapping = '<C-j>'
       })
-    end
-  }
+      vim.keymap.set({ "n", "i", "v", "t" }, "<C-k>", "<cmd>ToggleTerm name=floaty direction=float<CR>")
+      vim.keymap.set({ "n", "i", "v", "t" }, "<C-j>", "<cmd>ToggleTerm name=term direction=horizontal<CR>")
+    end,
+  },
 }
