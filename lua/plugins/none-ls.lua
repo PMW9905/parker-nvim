@@ -12,8 +12,8 @@ return {
         null_ls.builtins.completion.spell,
         null_ls.builtins.formatting.prettier,
         null_ls.builtins.diagnostics.pylint,
-        require("none-ls.diagnostics.eslint"), -- requires none-ls-extras.nvim
-        require("none-ls.code_actions.eslint"),
+        -- require("none-ls.diagnostics.eslint"), -- requires none-ls-extras.nvim
+        -- require("none-ls.code_actions.eslint"),
       },
     })
     vim.keymap.set("n", "<leader>fm", vim.lsp.buf.format, {})
