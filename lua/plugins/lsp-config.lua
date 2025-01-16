@@ -29,10 +29,6 @@ return {
 
 			lspconfig.ts_ls.setup({
 				capabilities = capabilities,
-				on_attach = function(client)
-					client.server_capabilities.documentFormattingProvider = false
-					client.server_capabilities.documentRangeFormattingProvider = false
-				end,
 			})
 
 			lspconfig.eslint.setup({
