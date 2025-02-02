@@ -35,6 +35,9 @@ if package.config:sub(1, 1) == "\\" then
   end
 end
 
+-- remap ctrl-c to esc 
+vim.cmd("imap <C-c> <Esc>")
+
 -- autocommand for relative line numbers in normal
 -- and line numbers in insert mode
 vim.cmd([[
