@@ -16,6 +16,7 @@ return {
 					"html",
 					"cssls",
 					"cssmodules_ls",
+					"pyright",
 				},
 			})
 		end,
