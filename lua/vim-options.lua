@@ -15,9 +15,6 @@ vim.opt.fileformats = "dos,unix"
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
--- Custom keybinds
-vim.keymap.set("n", "<leader>x", ":q<CR>")
-
 -- Default to powershell if on windows
 if package.config:sub(1, 1) == "\\" then
   local powershell_options = {
