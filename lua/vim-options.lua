@@ -36,7 +36,7 @@ if package.config:sub(1, 1) == "\\" then
   end
 end
 
--- remap ctrl-c to esc 
+-- remap ctrl-c to esc
 vim.cmd("imap <C-c> <Esc>")
 
 -- autocommand for relative line numbers in normal
@@ -48,3 +48,24 @@ vim.cmd([[
     autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
   augroup END
 ]])
+
+-- diagnostics preferences (in-line)
+
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+})
+
+-- Show diagnostics in a floating window for current line
+vim.keymap.set("n", "<leader>xl", function()
+  vim.diagnostic.open_float(nil, {
+    focus = false,
+    close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+    border = "rounded",
+    source = "always",
+    prefix = " ",
+    scope = "line",
+  })
+end)
