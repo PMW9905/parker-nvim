@@ -1,0 +1,58 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family:  "UbuntuMono Nerd Font", "Ubuntu Mono", monospace;
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#clock.time {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 2px 8px;
+}
+
+#clock.date {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border-radius: 10px;
+  margin: 2px;
+  margin-left: 4px;
+  padding: 2px 8px;
+}
+
+#pulseaudio {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border-radius: 10px;
+  margin: 2px;
+  margin-left: 4px;
+  padding: 2px 8px;
+}
+
+#workspaces {
+  margin: 2px;
+  padding: 2px;
+}
+
+#workspaces button {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 2px 8px;
+}
+
+#workspaces button:first-child {
+  border-radius:  10px 0 0 10px;
+}
+
+#workspaces button:last-child {
+  border-radius:  0 10px 10px 0;
+}
