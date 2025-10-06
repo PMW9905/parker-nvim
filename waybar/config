@@ -6,7 +6,7 @@
     "spacing": 0,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock#time"],
-    "modules-right": ["clock#date","pulseaudio"],
+    "modules-right": ["clock#date", "pulseaudio", "battery"],
     "clock#time": {
         "format": "{:%H:%M}",
         "tooltip": false
@@ -17,6 +17,10 @@
     },
     "pulseaudio": {
         "format": "{volume}%"
+    },
+     "battery": {
+        "format": "{capacity}% {icon} ",
+        "format-icons": ["", "", "", "", ""]
     },
     "hyprland/workspaces": {
       "format": "{icon}",
