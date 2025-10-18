@@ -27,10 +27,10 @@
     "network": {
         "interface": "wlan*",
         "format-wifi": "{icon}",
-        "format-ethernet": "󰈀",
-        "format-disconnected": "󰖪",
+        "format-ethernet": "󰈀  ",
+        "format-disconnected": "󰖪 ",
         "tooltip-format": "{essid} ({signalStrength}%)",
-        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
         "on-click": "nmtui"
     },
     "hyprland/workspaces": {
