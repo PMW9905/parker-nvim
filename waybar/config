@@ -22,12 +22,13 @@
     },
      "battery": {
         "format": "{capacity}% {icon} ",
+        "format-charging": "{capacity}% {icon}   ",
         "format-icons": ["", "", "", "", ""]
     },
     "network": {
         "interface": "wlan*",
         "format-wifi": "{icon}",
-        "format-ethernet": "󰈀  ",
+        "format-ethernet": "󰈀 ",
         "format-disconnected": "󰖪 ",
         "tooltip-format": "{essid} ({signalStrength}%)",
         "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
