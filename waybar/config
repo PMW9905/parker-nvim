@@ -17,8 +17,8 @@
     },
     "pulseaudio": {
         "format": "{volume}%",
-        "format-muted": "󰸈",
-        "format-source-muted": "󰸈"
+        "format-muted": "󰸈 ",
+        "format-source-muted": "󰸈 "
     },
      "battery": {
         "format": "{capacity}% {icon} ",
